@@ -1,0 +1,17 @@
+﻿<Window x:Class="RSACipher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RSACipher"
+        mc:Ignorable="d"
+        Title="RSA Image Encryption" Height="79.758" Width="800" ResizeMode="NoResize">
+    <Grid>
+        <Button x:Name="Btn_LoadImage" Margin="10,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="30" Click="Btn_LoadImage_Click" >Load Image</Button>
+        <Button x:Name="Btn_ClearImage" Margin="114,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="30" Click="Btn_ClearImage_Click">Clear Image</Button>
+        <Button x:Name="Btn_EncryptImage" Margin="218,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="30" Click="Btn_EncryptImage_Click" IsEnabled="False">Encrypyt Image</Button>
+        <Button x:Name="Btn_DecryptImage" Margin="323,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="30" IsEnabled="False" Click="Btn_DecryptImage_Click">Decrypt Image</Button>
+        <Button x:Name="Btn_SaveImage" Margin="428,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="87" Height="30" IsEnabled="False" Click="Btn_SaveImage_Click">Save Image</Button>
+        <TextBlock x:Name="StatusLabel" Margin="520,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="264" Height="30" TextWrapping="WrapWithOverflow" FontWeight="Bold" Foreground="Red" Padding="0,6,0,0">TEST</TextBlock>
+    </Grid>
+</Window>
